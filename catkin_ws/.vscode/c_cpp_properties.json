@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/home/vagrant/RoboJackets/software-training/week-4-robotics-Udit8348/catkin_ws/src/buzzsim/buzzsim/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "compileCommands": "${workspaceFolder}/src/week_4_exercises/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

@@ -24,7 +24,7 @@ double Kd_ = 0;
  */
 void kylePoseCallback(geometry_msgs::PoseStamped msg)
 {
-    // IMPLEMENT!
+    kyle_pose_ = msg;
 }
 
 
@@ -34,17 +34,23 @@ void kylePoseCallback(geometry_msgs::PoseStamped msg)
  * @param dt delta time from last update to this one
  */
 double pid(double error, double dt) {
-    // IMPLEMENT!
-
     // Proportional term
+    double Pout = Kp_ * error;
 
     // Integral term
+    integral_ += error * dt;
+    double Iout = Ki_ * integral_;
 
     // Derivative term
+    double derivative = (error - pre_error_) / dt;
+    double Dout = Kd_ * derivative;
+
+    // Save error to previous error
+    pre_error_ = error;
 
     // Calculate total output
-
-    return 0;
+    double output = Pout + Iout + Dout;
+    return output;
 }
 
 

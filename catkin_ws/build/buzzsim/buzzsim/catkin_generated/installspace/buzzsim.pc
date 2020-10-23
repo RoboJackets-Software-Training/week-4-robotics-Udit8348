@@ -1,0 +1,8 @@
+prefix=/home/vagrant/RoboJackets/software-training/week-4-robotics-Udit8348/catkin_ws/install
+
+Name: buzzsim
+Description: Description of buzzsim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roslib pcl_ros geometry_msgs message_runtime std_msgs std_srvs
